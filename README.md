@@ -38,10 +38,14 @@ pylint -> it captures the bad coding and syntax errors
 black -> to auto format the file   
 ipython -> turns the venv into a Notebook type (~ Jupiter) just type ipython to activate it and exit(). Good to prototype the unit test.    
 
+Also going to test the instalations!!!
+
+# to test only one module:
+
+python -m pytest -vv folder/file.py::module_name
 
 
 
-He is also going to test the instalations!!!
 
 
 

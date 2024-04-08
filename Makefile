@@ -11,4 +11,7 @@ format:
 lint:
 	pylint --disable=R, C hello.py
 
+debugger:	
+	python -m pytest -vv --pdb 
+
 all: install format lint test

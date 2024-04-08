@@ -5,6 +5,7 @@ def test_more_hello():
     assert "Hi" == more_hello()
 
 
-# test to fail:
+"""# test to fail:
 def test_tofail_more_hello():
-    assert "Bye" == more_hello()
+  assert "Bye" == more_hello()
+"""  

@@ -32,7 +32,7 @@ add the commands:
 Create a requirements file:
 touch requirements.txt
 
-
+He is also going to test the instalations!!!
 
 
 

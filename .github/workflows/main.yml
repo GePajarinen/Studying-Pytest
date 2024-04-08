@@ -4,10 +4,11 @@ on: [push]
 
 jobs:
   build:
-    run-on: ubuntu-latest
+
+    runs-on: ubuntu-latest
 
     steps:
-    - users: actions/checkout@v2
+    - uses: actions/checkout@v2
     - name: Set up Python 3.8
       uses: actions/setup-python@v1
       with:
@@ -17,16 +18,15 @@ jobs:
       run: |
         make install
     
-    - name: Format the code
+    - name: Format code
       run: |
-        make formar
-    
+        make format
+      
     - name: Lint 
       run: |
         make lint
     
-    - name: Test
+    - name: Test 
       run: |
         make test
-  
-
+    

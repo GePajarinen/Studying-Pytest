@@ -4,22 +4,24 @@ on: [push]
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-   # strategy: # ->> Should find a way to jump through the failured steps and proceed the next ones.
-   #   matrix:
-   #     Testing different versions of python
-   #     python-version: [3.7, 3.8, 3.9, 3.10.14]
+  runs-on: ubuntu-latest
+  strategy:
+       fail-fast: false
+       matrix:
+         Testing different versions of python
+         python-version: [3.7, 3.8, 3.9, 3.10.14 ]
+         continue-on-error: ${{ matrix.experimental }}
 
     steps:
     - uses: actions/checkout@v2
     - name: Set up python
-  #  - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
-  #      python-version: ${{ matrix.python-version }}
+        python-version: ${{ matrix.python-version }}
         python-version: 3.10.14
-    
+        experimental: true
+        
     - name: Install dependencies
       run: |
         make install

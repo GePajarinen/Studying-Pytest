@@ -6,13 +6,12 @@ Testing is a mandatory component of DevOps.
 
 creating virtual enviroment:
 
+'''bh
 which virtualenv
-
 virtaulenv --help
-
-virtualenv ~/.venv (to kinda hide the venv into a invisible foldar)
-
-source ~/.venv/bin/activate (to activitae the venv)
+virtualenv ~/.venv # to hide the venv into a invisible foldar
+source ~/.venv/bin/activate # to activitae the venv
+'''
 
 To configure the bash to have a venv for everynew tab:
 vim ~/.bashrc

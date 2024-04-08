@@ -30,7 +30,15 @@ touch Makefile
 add the commands:
 
 Create a requirements file:
-touch requirements.txt
+touch requirements.txt   
+pytest   
+pytest-cov -> it convers the percentage of what was tested   
+pylint -> it captures the bad coding and syntax errors   
+black -> to auto format the file   
+ipython -> turns the venv into a Notebook type (~ Jupiter) just type ipython to activate it and exit(). Good to prototype the unit test.    
+
+
+
 
 He is also going to test the instalations!!!
 

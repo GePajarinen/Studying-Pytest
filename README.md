@@ -3,7 +3,7 @@ Course from Coursera
 [![Python app test with GA](https://github.com/GePajarinen/class-pytest/actions/workflows/main.yml/badge.svg)](https://github.com/GePajarinen/class-pytest/actions/workflows/main.yml)
 
 > Testing is a mandatory component of DevOps.
--------------------------------------------
+
 Creating virtual enviroment:
 
 ```

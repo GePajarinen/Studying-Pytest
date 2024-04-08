@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
       # Testing different versions of python
-        python-version: [3.6, 3.7, 3.8, 3.9, 3.10.14]
+        python-version: [3.7, 3.8, 3.9, 3.10.14]
 
     steps:
     - uses: actions/checkout@v2
